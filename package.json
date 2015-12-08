@@ -32,9 +32,16 @@
     "mel": "./bin/mel.js"
   },
   "main": "./bin/mel.js",
+  "scripts": {
+    "test": "node ./bin/mel.js ./__tests__/*-test.js --presets=es2015"
+  },
   "dependencies": {
     "babel-register": "6.x",
     "glob": "6.x",
     "minimist": "1.x"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "tape": "^4.2.2"
   }
 }
