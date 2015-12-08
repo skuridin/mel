@@ -9,7 +9,7 @@ var babelConfig = Object.keys(argv).reduce(function(state, key) {
 
   if (argv[key].indexOf(',') === -1) state[key] = argv[key];
   else state[key] = argv[key].split(',');
-  
+
   return state;
 }, {});
 
