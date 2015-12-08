@@ -1,0 +1,40 @@
+{
+  "name": "mel",
+  "description": "Run Tape tests with Babel 6",
+  "version": "0.0.1",
+  "license": "MIT",
+  "homepage": "https://github.com/skuridin/mel",
+  "keywords": [
+    "babel",
+    "tape",
+    "testing",
+    "tests",
+    "es6",
+    "es2015"
+  ],
+  "author": {
+    "name": "Evgeniy Skuridin",
+    "email": "i@skurid.in",
+    "url": "https://skurid.in/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skuridin/mel.git"
+  },
+  "bugs": {
+    "email": "i@skurid.in",
+    "url": "https://github.com/skuridin/mel/issues"
+  },
+  "files": [
+    "bin/mel.js"
+  ],
+  "bin": {
+    "mel": "./bin/mel.js"
+  },
+  "main": "./bin/mel.js",
+  "dependencies": {
+    "babel-register": "6.x",
+    "glob": "6.x",
+    "minimist": "1.x"
+  }
+}
