@@ -11,5 +11,5 @@ You can pass babel options to CLI or use .babelrc file
 
 `mel ./tests/*.js ./tests2/*.js --presets=es2015,react`
 
-## Micence
+## Licence
 MIT
