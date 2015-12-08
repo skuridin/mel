@@ -3,11 +3,15 @@
 var path = require('path');
 var glob = require('glob');
 var argv = require('minimist')(process.argv.slice(2));
-var babelConfig = {};
 
-Object.keys(argv).forEach(function(key) {
-  if (key !== '_') babelConfig[key] = argv[key];
-});
+var babelConfig = Object.keys(argv).reduce(function(state, key) {
+  if (key === '_') return state;
+
+  if (argv[key].indexOf(',') === -1) state[key] = argv[key];
+  else state[key] = argv[key].split(',');
+  
+  return state;
+}, {});
 
 require('babel-register')(babelConfig);
 
