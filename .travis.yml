@@ -4,6 +4,10 @@ node_js:
   - "4"
   - "0.12"
   - "0.10"
+install:
+  - "npm install"
+  - "npm install -g ."
 script:
   - "npm run lint"
   - "npm run test"
+  - "mel __tests__/*-test.js --presets=es2015"
